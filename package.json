@@ -1,5 +1,5 @@
 {
-  "name": "niceplay-pkg-menu",
+  "name": "magneto-pkg-menu",
   "version": "0.0.1",
   "main": "lib/pkg.js",
   "scripts": {

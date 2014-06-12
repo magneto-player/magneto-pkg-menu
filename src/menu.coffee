@@ -5,13 +5,13 @@ class Menu
   constructor: ->
     @menuView = new MenuView
 
-    niceplay.on '!menu:toggle', => @menuView.toggle()
-    niceplay.on '!menu:show', => @menuView.show()
-    niceplay.on '!menu:hide', => @menuView.hide()
+    magneto.on '!menu:toggle', => @menuView.toggle()
+    magneto.on '!menu:show', => @menuView.show()
+    magneto.on '!menu:hide', => @menuView.hide()
 
-    niceplay.on 'package:enable', (pkg) =>
+    magneto.on 'package:enable', (pkg) =>
       @menuView.addNavigation(pkg.name)
 
-    niceplay.workspace.append @menuView
+    magneto.workspace.append @menuView
 
 module.exports = Menu

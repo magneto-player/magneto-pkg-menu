@@ -1,5 +1,5 @@
 
-{View} = niceplay.Views
+{View} = magneto.Views
 
 ###
 
@@ -43,11 +43,11 @@ class MenuView extends View
   initialize: ->
 
   toggle: ->
-    niceplay.workspace.toggleClass 'menu-open'
+    magneto.workspace.toggleClass 'menu-open'
   show: ->
-    niceplay.workspace.addClass 'menu-open'
+    magneto.workspace.addClass 'menu-open'
   hide: ->
-    niceplay.workspace.hideClass 'menu-open'
+    magneto.workspace.removeClass 'menu-open'
 
   addNavigation: (title) ->
     @subNavigation.append View.render ->
